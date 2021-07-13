@@ -481,7 +481,7 @@ function _runServer(argv) {
 
   app.set('view engine', 'hbs');
   app.set('view options', { layout: 'layout' })
-  app.engine('handlebars', hbs.__express);
+  app.engine('hbs', hbs.__express);
 
   // Register Helpers
   hbs.registerHelper('extend', function(name, context) {
